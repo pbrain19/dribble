@@ -1,4 +1,4 @@
-package dribble;
+package dribble.domain;
 
 public class User {
 	private final long id;

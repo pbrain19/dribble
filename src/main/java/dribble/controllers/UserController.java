@@ -1,4 +1,4 @@
-package dribble;
+package dribble.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -8,11 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
-
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-    
-
+ 
     @RequestMapping("/user")
     public String user(@RequestParam(value="name", defaultValue="World") String name) {
         return "whats up" + name;
